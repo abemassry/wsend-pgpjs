@@ -5,4 +5,21 @@
   <link rel="icon" href="/img/favicon.png">
   <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
   <link rel="stylesheet" href="/stylesheets/font-awesome.min.css">
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+  <script>
+    function logoutOfSite(){
+      localStorage["account_created"] = 0;
+      localStorage[".id"] = '';
+    }
+  </script>
+  <script>
+  function supports_html5_storage() {
+    try {
+       localStorage["works"] = "yes";
+       return 'localStorage' in window && window['localStorage'] !== null;
+    } catch (e) {
+       return false;
+    }
+  }
+    sessionVar = false;
+  </script>
